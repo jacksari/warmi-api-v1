@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/', [HomeController::class, 'hola']);
-Route::get('/videos', [HomeController::class, 'index']);
+Route::get('/courses', [HomeController::class, 'index']);
 
