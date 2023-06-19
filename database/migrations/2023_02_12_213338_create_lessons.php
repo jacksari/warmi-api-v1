@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
-            $table->integer('time')->nullable();
-            $table->string('url')->nullable();
-            $table->string('key')->nullable();
+            // $table->integer('time')->nullable();
+            // $table->string('url')->nullable();
+            // $table->string('key')->nullable();
 
             $table->unsignedBigInteger('section_id');
 

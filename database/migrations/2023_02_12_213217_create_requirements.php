@@ -13,18 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('requirements', function (Blueprint $table) {
-            $table->id();
+        // Schema::create('requirements', function (Blueprint $table) {
+        //     $table->id();
 
             
-            $table->string('name');
-            $table->unsignedBigInteger('course_id');
+        //     $table->string('name');
+        //     $table->unsignedBigInteger('course_id');
 
-            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
+        //     $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
 
 
-            $table->timestamps();
-        });
+        //     $table->timestamps();
+        // });
     }
 
     /**

@@ -21,4 +21,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('/courses', [HomeController::class, 'index']);
+Route::post('/insert-course', [HomeController::class, 'insertCourse']);
+Route::post('/insert-lading', [HomeController::class, 'insertFormLanding']);
+
+
+
+//
+
+
 

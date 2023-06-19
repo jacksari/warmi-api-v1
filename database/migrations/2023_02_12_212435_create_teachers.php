@@ -13,27 +13,27 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('teachers', function (Blueprint $table) {
-            $table->id();
+        // Schema::create('teachers', function (Blueprint $table) {
+        //     $table->id();
 
-            $table->string('title');
-            $table->string('slug')->unique();
+        //     $table->string('title');
+        //     $table->string('slug')->unique();
 
-            $table->string('image');
-            $table->text('description');
-            $table->string('website')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('twitter')->nullable();
-            $table->string('linkedin')->nullable();
-            $table->string('youtube')->nullable();
-            $table->boolean('status')->default(false);
+        //     $table->string('image');
+        //     $table->text('description');
+        //     $table->string('website')->nullable();
+        //     $table->string('facebook')->nullable();
+        //     $table->string('twitter')->nullable();
+        //     $table->string('linkedin')->nullable();
+        //     $table->string('youtube')->nullable();
+        //     $table->boolean('status')->default(false);
 
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        //     $table->unsignedBigInteger('user_id');
+        //     $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
  
 
-            $table->timestamps();
-        });
+        //     $table->timestamps();
+        // });
     }
 
     /**

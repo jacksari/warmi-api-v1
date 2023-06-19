@@ -30,8 +30,8 @@ return new class extends Migration
 
         DB::statement("
             insert into reviews (name,country, url, comment,created_at, updated_at)
-            values ('Jack Sari', 'PE', 'https://media.licdn.com/dms/image/C4D03AQGqbvSBp-L9LA/profile-displayphoto-shrink_800_800/0/1604822970829?e=1689206400&v=beta&t=BIvc6lfkvqoUfJOu0BG9koZOjdhvT1H2oZ3-MUj0Bw0', 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.', now(), now()),
-            ('Giovana Roque Vargas', 'PE', 'https://media.licdn.com/dms/image/D5603AQFLGvkJA3E64g/profile-displayphoto-shrink_800_800/0/1667842662122?e=1689206400&v=beta&t=sPCOM3tYXKKEOxXFpn4keNGRu1kWxwDIdeLywSsRRk4', 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.', now(), now());
+            values ('Jack Sari', 'PE', 'https://res.cloudinary.com/mikunaalli/image/upload/v1654122331/amg/004-polla_mwaaze.png' , 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.', now(), now()),
+            ('Giovana Roque Vargas', 'PE', 'https://res.cloudinary.com/mikunaalli/image/upload/v1654122331/amg/004-polla_mwaaze.png', 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.', now(), now());
         ");
 
         DB::statement("

@@ -18,8 +18,10 @@ return new class extends Migration
 
 
             $table->string('title');
-            $table->string('subtitle');
+            $table->text('subtitle')->nullable();
             $table->text('description');
+            $table->text('objetive')->nullable();
+            $table->text('resume');
 
             $table->string('video')->nullable();
             $table->string('image')->nullable();
@@ -32,11 +34,11 @@ return new class extends Migration
 
             $table->string('slug')->unique();
 
-            $table->unsignedBigInteger('level_id')->nullable();
-            $table->unsignedBigInteger('category_id')->nullable();
+            // $table->unsignedBigInteger('level_id')->nullable();
+            // $table->unsignedBigInteger('category_id')->nullable();
 
-            $table->foreign('level_id')->references('id')->on('levels')->onDelete('set null');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
+            // $table->foreign('level_id')->references('id')->on('levels')->onDelete('set null');
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
 
             $table->timestamps();
         });
